@@ -1,2 +1,2 @@
 # chatbox-by-naphapen
-code css chatbox
+CSS code for a text box overlay used on a stream screen by naphapen (pink,katie)

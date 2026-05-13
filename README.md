@@ -12,6 +12,7 @@
 
 *2. chatbox_redblack.css is a CSS file for a red and black chat box.*
 
-<img width="776" height="361" alt="image" src="https://github.com/user-attachments/assets/e62c6ebb-4eed-4606-ae26-fcb710a3edc4" />
+<img width="371" height="433" alt="image" src="https://github.com/user-attachments/assets/833bb1b4-cb70-439c-a56e-ef789953669e" />
+
 
 

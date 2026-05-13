@@ -8,84 +8,81 @@ body {
   overflow: hidden;
 }
 
-#log .item {
+
+#log > div {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
- 
-  margin-bottom: 60px; 
-  width: 100%;
+  align-items: flex-start;
+  margin-top: 40px;    
+  margin-bottom: 10px; 
+  width: fit-content;
   max-width: 95%;
   position: relative;
 }
 
 
-#log .name {
+#log .meta {
   background: #1a0000; 
   color: #ffffff !important;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 4px 15px;
-  border: 1px solid #ff4d4d;
-  border-bottom: none;
-  border-radius: 8px 8px 0 0;
+  border: 1.5px solid #8b0000; 
+  padding: 6px 15px;
+  border-radius: 10px;
   
+ 
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  flex-wrap: nowrap; 
+  gap: 8px;        
   
-  margin-right: 20px;
- 
-  margin-top: 15px;
-  margin-bottom: -1px; 
+  margin-left: 15px;
+  margin-bottom: -12px;
   position: relative;
   z-index: 2;
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
-  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 
-#log .item > img,
-#log .item > .badge,
-#log .name img {
-  height: 20px;
+#log .badges {
+  display: inline-flex; 
+  align-items: center;
+  gap: 4px;           
+}
+
+#log .badges img {
+  height: 22px;  
   width: auto;
-  vertical-align: middle;
+  display: inline-block;
+  position: static !important; 
+  margin: 0 !important;
+}
+
+#log .name {
+  font-weight: bold;
+  font-size: 20px;
+  white-space: nowrap; 
 }
 
 
 #log .message {
-  background: linear-gradient(to bottom, #4a0000, #2b0000);
+  background: rgba(60, 0, 0, 0.95); 
   color: #ffffff;
   font-size: 20px;
   line-height: 1.5;
   
-  width: 100%;
-  padding: 15px 20px;
-  border: 1.5px solid #8b0000;
-  border-radius: 15px 0 15px 15px; 
+  padding: 25px 20px 15px 20px; 
+  border-radius: 15px;
+  border-left: 8px solid #ff0000;
   
   position: relative;
   z-index: 1;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   
   white-space: pre-wrap;
   word-wrap: break-word;
   display: block;
+  width: 100%;
 }
 
-
-#log .message::before {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  right: 3px;
-  bottom: 3px;
-  border: 1px solid rgba(255, 77, 77, 0.2);
-  border-radius: 12px 0 12px 12px;
-  pointer-events: none;
-}
 
 #log .message img {
   height: 1.2em;

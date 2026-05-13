@@ -1,0 +1,82 @@
+/* chat box theme red black*/
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+body {
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  font-family: 'Itim', cursive;
+  overflow: hidden;
+}
+
+#log .item {
+
+  margin-top: 20px;
+  margin-bottom: 50px; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+  max-width: 95%;
+}
+
+
+#log .name {
+  background: #000000; 
+  color: #ffffff !important; 
+  border: 2px solid #ff0000; 
+  font-size: 20px;
+  font-weight: bold;
+  padding: 6px 15px;
+  border-radius: 8px;
+  
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  
+  /* ทำให้ชื่อทับลงไปในกรอบข้อความ */
+  margin-bottom: -15px; 
+  margin-left: 15px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* จัดการยศ (Badge) ให้อยู่ในกรอบเดียวกับชื่อ */
+#log .item > img,
+#log .item > .badge,
+#log .name img,
+#log .badge {
+  height: 24px;
+  width: auto;
+  vertical-align: middle;
+}
+
+
+#log .message {
+  background: #ff0000; 
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.5;
+  
+ 
+  padding: 25px 20px 15px 25px; 
+  border-radius: 12px;
+  display: block;
+  
+  position: relative;
+  z-index: 1;
+  
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  
+  /* เพิ่มขอบดำบางๆ ให้กล่องข้อความดูมีมิติขึ้น */
+  border: 1px solid #8b0000;
+}
+
+/* เพิ่มเติม: ทำให้ Emote ขนาดพอดีกับข้อความ */
+#log .message img {
+  height: 1.2em;
+  vertical-align: middle;
+}

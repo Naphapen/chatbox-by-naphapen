@@ -3,79 +3,89 @@
 
 body {
   background-color: rgba(0, 0, 0, 0);
-  color: #ffffff;
+  margin: 0;
+  padding: 20px;
   font-family: 'Itim', cursive;
   overflow: hidden;
 }
 
 #log .item {
-
-  margin-top: 20px;
-  margin-bottom: 50px; 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: fit-content;
+  align-items: flex-end; 
+  margin-bottom: 40px;
+  width: 100%;
   max-width: 95%;
+  position: relative;
 }
 
 
 #log .name {
-  background: #000000; 
-  color: #ffffff !important; 
-  border: 2px solid #ff0000; 
-  font-size: 20px;
+  background: #1a0000; 
+  color: #ffffff !important;
+  font-size: 18px;
   font-weight: bold;
-  padding: 6px 15px;
-  border-radius: 8px;
+  padding: 4px 15px;
+  border: 1px solid #ff4d4d; 
+  border-bottom: none; 
+  border-radius: 8px 8px 0 0;
   
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   
-  /* ทำให้ชื่อทับลงไปในกรอบข้อความ */
-  margin-bottom: -15px; 
-  margin-left: 15px;
+  margin-right: 20px; 
+  margin-bottom: -1px; 
   position: relative;
   z-index: 2;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+  text-transform: uppercase;
 }
 
-/* จัดการยศ (Badge) ให้อยู่ในกรอบเดียวกับชื่อ */
+
 #log .item > img,
 #log .item > .badge,
-#log .name img,
-#log .badge {
-  height: 24px;
+#log .name img {
+  height: 20px;
   width: auto;
   vertical-align: middle;
 }
 
 
 #log .message {
-  background: #ff0000; 
+  background: linear-gradient(to bottom, #4a0000, #2b0000);
   color: #ffffff;
   font-size: 20px;
   line-height: 1.5;
   
- 
-  padding: 25px 20px 15px 25px; 
-  border-radius: 12px;
-  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  border: 1.5px solid #8b0000;
+  border-radius: 15px 0 15px 15px; 
   
   position: relative;
   z-index: 1;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   
   white-space: pre-wrap;
   word-wrap: break-word;
-  overflow-wrap: break-word;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-  
-  /* เพิ่มขอบดำบางๆ ให้กล่องข้อความดูมีมิติขึ้น */
-  border: 1px solid #8b0000;
+  display: block;
 }
 
-/* เพิ่มเติม: ทำให้ Emote ขนาดพอดีกับข้อความ */
+
+#log .message::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border: 1px solid rgba(255, 77, 77, 0.2); 
+  border-radius: 12px 0 12px 12px;
+  pointer-events: none;
+}
+
+
 #log .message img {
   height: 1.2em;
   vertical-align: middle;

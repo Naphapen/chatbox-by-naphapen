@@ -5,7 +5,9 @@
 
 *1.chatbox_lpu_lpi.css is a CSS file for a light purple and light pink chat box.*
 
-<img width="260" height="254" alt="image" src="https://github.com/user-attachments/assets/3c7aed1b-1ddc-48ae-84d1-14a51a654903" />
+<img width="396" height="339" alt="image" src="https://github.com/user-attachments/assets/3923906b-3598-4e04-a579-b34b9d9116a4" />
+
+
 
 
 -------------------------------------------------------------------------------------------

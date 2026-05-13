@@ -1,6 +1,6 @@
-# chatbox-by-naphapen
+# chatbox free -by naphapen-
 
- ***CSS code for a text box overlay used on a stream screen by naphapen (pink,katie) 👍***
+ ***CSS code for a text box overlay used on a stream screen FREE ✨ by naphapen (pink,katie) 👍***
 
 
 *1.chatbox_lpu_lpi.css is a CSS file for a light purple and light pink chat box.*

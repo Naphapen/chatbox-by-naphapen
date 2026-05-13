@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+body {
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  font-family: 'Itim', cursive;
+  overflow: hidden;
+}
+
+#log .item {
+  margin-top: 25px; 
+  margin-bottom: 45px; 
+  display: block;
+  width: fit-content;
+  max-width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#log .name {
+  background: #4c1d95; 
+  color: #fbcfe8 !important; 
+  font-size: 20px;
+  font-weight: bold;
+  padding: 6px 15px; 
+  border-radius: 10px; 
+  
+  display: inline-flex; 
+  align-items: center;
+  gap: 8px; 
+  
+  margin-bottom: -12px; 
+  margin-left: 12px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+
+#log .item > img, 
+#log .item > .badge,
+#log .name img, 
+#log .badge {
+  height: 24px; 
+  width: auto;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+
+#log .item {
+  position: relative;
+}
+
+#log .message {
+  background: rgba(255, 255, 255, 0.95); 
+  color: #1a1a1a; 
+  font-size: 20px;
+  line-height: 1.5;
+  
+  padding: 25px 18px 12px 25px; 
+  
+  border-radius: 15px; 
+  border-left: 8px solid #d8b4fe;
+  display: block; 
+  
+  position: relative;
+  z-index: 1;
+  
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}

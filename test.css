@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0;
+  padding: 20px;
+  font-family: 'Kanit', cursive;
+  overflow: hidden;
+}
+
+/* ช่องว่างระหว่างชุดข้อความของแต่ละคน */
+#log > div {
+  display: block;
+  margin-top: 15px;    /* ระยะห่างจากคนก่อนหน้า */
+  margin-bottom: 20px; 
+  width: fit-content;
+  max-width: 95%;
+  position: relative;
+}
+
+/* กรอบใหญ่ที่รวมทุกอย่าง (พื้นขาว กรอบเขียว 4px) */
+#log .meta, #log .message {
+  display: inline; /* บังคับให้ไหลต่อกัน */
+}
+
+/* สร้าง container จำลองเพื่อคลุมทั้งชื่อและข้อความ */
+#log > div {
+  background: #ffffff;      /* พื้นหลังสีขาว */
+  border: 4px solid #22c55e; /* กรอบสีเขียว 4px ด้านนอก */
+  border-radius: 15px;
+  padding: 15px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* กรอบจุดไข่ปลาด้านใน (ใช้ Pseudo-element) */
+#log > div::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border: 2px dashed #22c55e; /* กรอบไข่ปลาสีเขียวด้านใน */
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+/* ส่วนของชื่อและยศ */
+#log .meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;           /* ให้ยศกับชื่ออยู่ติดกัน */
+  margin-right: 8px;  /* เว้นระยะก่อนเริ่มข้อความ */
+  vertical-align: middle;
+}
+
+#log .badges {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+#log .badges img {
+  height: 20px;
+  width: auto;
+  position: static !important;
+  margin: 0 !important;
+}
+
+#log .name {
+  color: #166534 !important; /* ชื่อสีเขียวเข้ม */
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* ส่วนของข้อความ */
+#log .message {
+  color: #4b5563; /* ข้อความตัวหนังสือสีเทา */
+  font-size: 18px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+/* ปรับแต่ง Emote ในแชท */
+#log .message img {
+  height: 1.2em;
+  vertical-align: middle;
+}
+
+/* เพิ่มโค้ดส่วนนี้เข้าไปในไฟล์ CSS ของคุณ */
+
+#log > div::after {
+  content: "";
+  position: absolute;
+  
+  /* 1. กำหนดขนาดของรูป */
+  width: 40px; 
+  height: 40px;
+  
+  /* 2. ใส่ลิงก์รูปภาพของคุณตรงนี้ */
+  background-image: url('https://cdn-icons-png.flaticon.com/512/188/188333.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  /* 3. เลือกมุมที่ต้องการวาง (ตัวอย่างนี้คือมุมขวาล่าง) */
+  bottom: -10px; 
+  right: -10px;
+  
+  /* 4. ตั้งค่าให้อยู่บนสุด */
+  z-index: 5;
+}

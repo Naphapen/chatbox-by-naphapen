@@ -9,7 +9,7 @@
 
 -------------------------------------------------------------------------------------------
 
-*2. chatbox_redblack.css is a CSS file for a red and black chat box.* [click]([https://example.com](https://github.com/Naphapen/chatbox-by-naphapen/blob/main/chatbox_redblack.css))
+*2. chatbox_redblack.css is a CSS file for a red and black chat box.* [click](https://github.com/Naphapen/chatbox-by-naphapen/blob/main/chatbox_redblack.css)
 
 <img width="371" height="433" alt="image" src="https://github.com/user-attachments/assets/833bb1b4-cb70-439c-a56e-ef789953669e" />
 

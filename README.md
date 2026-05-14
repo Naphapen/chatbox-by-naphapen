@@ -22,4 +22,11 @@
 
 <img width="432" height="332" alt="image" src="https://github.com/user-attachments/assets/3360cfd8-2d1f-4a90-92a6-e120dd694f58" />
 
+-------------------------------------------------------------------------------------------
+
+*4. chatbox_redblack.css is a CSS file for a light green + icon chat box.*
+
+<img width="345" height="343" alt="image" src="https://github.com/user-attachments/assets/34f101b3-d7bb-43dc-bd45-d8f78cc022a0" />
+
+
 

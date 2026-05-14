@@ -1,7 +1,12 @@
 # chatbox free -by naphapen-
 
  ***CSS code for a text box overlay used on a stream screen FREE ✨ by naphapen (pink,katie) 👍***
-
+-------------------------------------------------------------------------------------------
+ **HOW TO**
+Please place the JS and CSS files in the correct custom folders according to their file extensions.
+The JS file is responsible for making the chat move and limiting the number of displayed messages. You can adjust these settings at the bottom of the JS file.
+$('#log .chat-item').length > 3
+-------------------------------------------------------------------------------------------
 
 *1.chatbox_lpu_lpi.css is a CSS file for a light purple and light pink chat box.* [click](https://github.com/Naphapen/chatbox-by-naphapen/blob/main/chatbox_lpu_lpi.css)
 

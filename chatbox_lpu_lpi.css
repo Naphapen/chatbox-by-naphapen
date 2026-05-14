@@ -9,12 +9,11 @@ body {
   overflow: hidden;
 }
 
-/* ช่องว่างระหว่างชุดข้อความของแต่ละคน */
 #log > div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 30px;    /* เพิ่มระยะห่างจากชื่อและข้อความคนก่อนหน้า */
+  margin-top: 30px;
   margin-bottom: 15px; 
   width: fit-content;
   max-width: 95%;
@@ -23,8 +22,8 @@ body {
 
 
 #log .meta {
-  background: #4c1d95; /* สีม่วงเข้ม */
-  color: #fbcfe8 !important; /* ตัวหนังสือม่วงอ่อน */
+  background: #4c1d95;
+  color: #fbcfe8 !important;
   padding: 6px 15px;
   border-radius: 10px;
   

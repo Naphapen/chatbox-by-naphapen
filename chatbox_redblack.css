@@ -12,14 +12,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 30px;    /* เพิ่มระยะห่างจากคนก่อนหน้า */
+  margin-top: 30px;
   margin-bottom: 10px; 
   width: fit-content;
   max-width: 95%;
   position: relative;
 }
 
-/* ส่วนของชื่อและยศ (Meta) */
 #log .meta {
   background: #1a0000;
   color: #ffffff !important;

@@ -24,7 +24,7 @@
 
 -------------------------------------------------------------------------------------------
 
-*4. chatbox_redblack.css is a CSS file for a light green + icon chat box.*
+*4. chatbox_lightgreen_icon.css is a CSS file for a light green + icon chat box.*
 
 <img width="345" height="343" alt="image" src="https://github.com/user-attachments/assets/34f101b3-d7bb-43dc-bd45-d8f78cc022a0" />
 
